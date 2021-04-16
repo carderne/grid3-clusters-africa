@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>GRID3-clusters-africa</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <script src="vendor/mapbox-gl.js"></script>
+        <link href="vendor/mapbox-gl.css" rel="stylesheet" />
+        <style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiY2FyZGVybmUiLCJhIjoiY2puMXN5cnBtNG53NDN2bnhlZ3h4b3RqcCJ9.eNjrtezXwvM7Ho1VSxo06w';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/carderne/cknkbe9vx13au17npske5lon7',
+                center: [14, -8],
+                zoom: 4,
+                minZoom: 3,
+            });
+        </script>
+    </body>
+</html>
